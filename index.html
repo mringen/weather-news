@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Morning Coffee Starting Page</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,400,600|Open+Sans">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/default.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/NewsAPI.js"></script>
+	<script type="text/javascript" src="js/weatherAPI.js"></script>
+</head>
+<body>
+	<main>
+		<div id="header">
+			<div id="weatherIcon"><img id="wicon" src="" alt="Weather icon"></div>
+			<div id="weatherText">
+				<p>Please select your weather <a href="#" id="updateLocation">location</a></p>
+				<p>
+					Latest news from
+					<select id="updateNewsSource">
+						<option disabled selected>Select your country</option>
+					</select>
+				</p>
+			</div>
+		</div>
+		<div>
+			<div id="articlesLeft">
+			</div>
+			<aside id="articlesRight">
+			</aside>
+		</div>
+	</main>
+	<div id="newSelectorBox">
+		<div><p class="close">close selection</p></div>
+	</div>
+</body>
+</html>
